@@ -1,0 +1,98 @@
+/* Mengatur margin, padding, dan box-sizing untuk semua elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mengatur gaya untuk elemen body */
+body {
+    font-family: 'Arial', sans-serif; /* Mengatur font */
+    background-color: #f0f4f8; /* Mengatur warna latar belakang */
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    justify-content: center; /* Menyelaraskan konten secara horizontal ke tengah */
+    align-items: center; /* Menyelaraskan konten secara vertikal ke tengah */
+    min-height: 100vh; /* Mengatur tinggi minimum 100% dari tinggi viewport */
+    margin: 0;
+    flex-direction: column; /* Menyusun elemen secara kolom */
+    text-align: center; /* Mengatur teks agar rata tengah */
+}
+
+/* Mengatur gaya untuk elemen dengan kelas container */
+.container {
+    width: 100%; /* Lebar 100% */
+    max-width: 1000px; /* Lebar maksimum 1000px */
+    margin: 0 auto; /* Margin otomatis untuk menyelaraskan ke tengah */
+}
+
+/* Mengatur gaya untuk elemen h1 */
+h1 {
+    color: #2c3e50; /* Warna teks */
+    font-size: 2rem; /* Ukuran font */
+    margin-bottom: 20px; /* Margin bawah */
+}
+
+/* Mengatur gaya untuk elemen dengan kelas game-board */
+.game-board {
+    display: grid; /* Menggunakan grid untuk tata letak */
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Kolom grid responsif dengan ukuran minimal kartu 120px */
+    gap: 10px; /* Jarak antar elemen grid */
+    margin: 20px 0; /* Margin atas dan bawah */
+}
+
+
+.card {
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card.flipped {
+    background-color: #fff;
+    transform: scale(1.05);
+}
+
+.card.matched {
+    background-color: #2ecc71;
+    pointer-events: none;
+}
+
+.restart-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.restart-button:hover {
+    background-color: #2980b9;
+}
+
+/* Responsif: ukuran kartu dan tombol akan menyesuaikan dengan ukuran layar */
+@media (max-width: 600px) {
+    .game-board {
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); /* Ukuran kartu lebih kecil pada layar kecil */
+    }
+
+    .card {
+        font-size: 2.5rem;
+    }
+
+    .restart-button {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}

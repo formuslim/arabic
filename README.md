@@ -1,4 +1,7 @@
-**Hijaiyah Memory Game** is a simple and engaging web-based educational game designed to help users learn and memorize the Arabic alphabet (Hijaiyah letters) through interactive gameplay. This project aims to provide a delightful learning experience, especially for beginners and children, by blending education with entertainment in a humble and user-friendly manner.
+**Arabic Letters Memory** is a simple web-based educational game designed to help users learn and memorize the Arabic alphabet for beginners and children.
+
+**Арабские буквы** это простая браузерная игра в которой надо найти все пары одинаковых букв. 
+Помогает запомнить чем отличаются отдельные арабские буквы между собой и какие формы арабских букв и сколько у них точек, и где эти точки сверху или снизу.
 
 ---
 
@@ -45,6 +48,6 @@ This project is created with utmost sincerity and is inspired by a passion for s
 
 ---
 
-Feel free to contribute, report issues, or suggest improvements. Let’s make learning Hijaiyah fun for everyone! 😊
+Feel free to contribute, report issues, or suggest improvements. Let’s make learning Hijaiyah fun for everyone!
 
 

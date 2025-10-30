@@ -73,7 +73,7 @@ function checkMatch() {
         flippedCards = [];
         
         if (matchedCards.length === cards.length) {
-            setTimeout(() => alert('Alhamdulillah, Selamat! Anda Menang!'), 500);
+            setTimeout(() => alert('الحمد لله \n Хвала Аллаху! Вы нашли все пары арабских букв.\n Alhamdulillah, Selamat! Anda Menang!'), 500);
         }
     } else {
         setTimeout(() => {
@@ -95,3 +95,4 @@ function startGame() {
 restartButton.addEventListener('click', startGame);
 
 startGame(); // Start the game when page loads
+
